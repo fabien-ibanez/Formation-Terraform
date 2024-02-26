@@ -1,0 +1,3 @@
+terraform plan -var 'vm-name=machine-fi'
+ou
+terraform plan -var-file terraform.tfvars
