@@ -1,6 +1,9 @@
 terraform {
-    backend "local" {
-    }
+    backend "gcs" {
+        bucket = "terraform-fibanez"
+        prefix = "terraform/state"
+        credentials = "oa-bta-learning-dv-ce1357df1875.json"
+}
 
 required_providers {
         google = {
