@@ -1,0 +1,3 @@
+terraform plan -var-file allow.tfvars -var-file deploy.tfvars
+terraform apply -var-file allow.tfvars -var-file deploy.tfvars
+terraform destroy -var-file allow.tfvars -var-file deploy.tfvars
